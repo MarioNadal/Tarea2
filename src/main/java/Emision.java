@@ -1,5 +1,5 @@
 public class Emision {
-    private boolean emision;
+    private boolean emision = false;
 
     public boolean isEmision() {
         return emision;
