@@ -30,9 +30,9 @@ public class RadioFaros {
             if(emision.isEmision()){
                 hayColision = "COLISIÓN";
             }else{
+                emision.setEmision(true);
                 hayColision = "NO COLISIÓN";
             }
-            emision.setEmision(true);
             Calendar l_Calendario = new GregorianCalendar();
             System.out.print(l_Calendario.get(Calendar.HOUR_OF_DAY) + ":" +
                     l_Calendario.get(Calendar.MINUTE) + ":" + l_Calendario.get(Calendar.SECOND));
